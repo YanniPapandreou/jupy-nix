@@ -45,13 +45,5 @@
           echo "Jupyter custom kernels is ready. Run: 'jupyter lab' to launch"
         '';
       };
-
-      templates = rec {
-        python-and-r = {
-          path = ./templates/python-and-r;
-          description = "nix flake new my-project -t github:YanniPapandreou/jupy-nix";
-        };
-        default = python-and-r; 
-      };
     };
 }
